@@ -1,7 +1,7 @@
 {
   "name": "dockerstuff",
   "version": "0.0.1",
-  "description": "Docker starting point for websites with PHP and NPM",
+  "description": "Docker starting point for websites with PHP, phpMyAdmin and NPM",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

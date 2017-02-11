@@ -1,5 +1,5 @@
 {
-  "name": "doStuff Starter Pack",
+  "name": "dockerstuff",
   "version": "0.0.1",
   "description": "Docker starting point for websites with PHP and NPM",
   "main": "index.js",

@@ -1,7 +1,7 @@
 dockerstuff
 =================
 
-Docker starting point: PHP (7), phpMyAdmin, webpack, SASS (SCSS) and babel (ES2015).
+Docker starting point for development: PHP (7), phpMyAdmin, webpack, SASS (SCSS) and babel (ES2015).
 
 Requirements:
 
@@ -13,11 +13,11 @@ Usage:
 - Run `docker-compose up --build`
 - Run `npm install`
 - Run `webpack`
-- Ready to go: Build your stuff within the `website` (for HTML and PHP) and `assets` (for Javascript and SASS) folder. ES2015 is transpiled via Babel.
+- Ready to go: Build your stuff within the `website` (for HTML and PHP) and `assets` (for Javascript and SASS) folder. ES2015 is transpiled via Babel. Remember to webpack your assets while developing.
 
 ## MySQL
 
-There is a database created for you with no tables.
+A database is created.
 
 For connecting, use following info:
 

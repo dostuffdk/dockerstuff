@@ -1,24 +1,22 @@
-<?php
-$hostname = "mysql";
-$username = "root";
-$password = "1234";
- 
-
-if(function_exists('mcrypt_encrypt')) {
-    echo "mcrypt is loaded!";
-} else {
-    echo "mcrypt isn't loaded!";
-}
-
-echo json_encode(array('one' => 1));
-var_dump(json_decode('{"one":1}', true));
-
-try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=mysql", $username, $password);
-    echo "Connected to database"; // check for connection
-    }
-catch(PDOException $e)
-    {
-    echo $e->getMessage();
-    }
-?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dockerstuff</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<?php
+	$hostname = "mysql";
+	$username = "root";
+	$password = "1234";
+	try {
+	    $dbh = new PDO("mysql:host=$hostname;dbname=mysql", $username, $password);
+	    echo "Connected to database"; // check for connection
+	    }
+	catch(PDOException $e)
+	    {
+	    echo $e->getMessage();
+	    }
+	?>
+</body>
+</html>

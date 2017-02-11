@@ -1,0 +1,19 @@
+{
+  "name": "doStuff Starter Pack",
+  "version": "0.0.1",
+  "description": "Docker starting point for websites with PHP and NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dostuffdk@bitbucket.org/dostuffdk/dockerstuff.git"
+  },
+  "author": "Anders Mogensen <anders@dostuff.dk>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dostuffdk/dockerstuff#readme",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}

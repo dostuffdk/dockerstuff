@@ -1,11 +1,11 @@
 dockerstuff
 =================
 
-Docker starting point for websites with PHP (7), phpMyAdmin, webpack, SASS (SCSS) and babel (ES2015).
+Docker starting point: PHP (7), phpMyAdmin, webpack, SASS (SCSS) and babel (ES2015).
 
 Requirements:
 
-- NPM and webpack installed on your development machine.
+- npm and webpack installed on your development machine.
 
 Usage:
 

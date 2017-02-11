@@ -5,14 +5,15 @@ Docker starting point: PHP (7), phpMyAdmin, webpack, SASS (SCSS) and babel (ES20
 
 Requirements:
 
-- npm and webpack installed on your development machine.
+- Docker (with docker-compose), npm and Webpack installed on your development machine.
 
 Usage:
 
 - Clone the project
+- Run `docker-compose up --build`
 - Run `npm install`
 - Run `webpack`
-- Build your stuff within the `website` (for HTML and PHP) and `assets` (for Javascript and SASS) folder. ES2015 is transpiled via Babel.
+- Ready to go: Build your stuff within the `website` (for HTML and PHP) and `assets` (for Javascript and SASS) folder. ES2015 is transpiled via Babel.
 
 ## MySQL
 

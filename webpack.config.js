@@ -16,7 +16,15 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader!sass-loader')
-			}
+			},
+			{
+				test: /\.js$/,
+				loader: 'babel',
+				exclude: /node_modules/,
+				query: {
+					plugins: ['transform-runtime']
+				}
+			},
 		]
 	}
 };

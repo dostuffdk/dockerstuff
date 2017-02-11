@@ -21,7 +21,7 @@ services:
     expose:
       - 9000
     volumes:
-      - ./website/www:/var/www/html
+      - ./website:/var/www/html
 
   mysql:
     image: mysql:latest

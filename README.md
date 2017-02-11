@@ -5,12 +5,13 @@ Docker starting point for websites with PHP, phpMyAdmin and NPM.
 
 Requirements:
 
-- NPM installed on your development machine.
+- NPM and webpack installed on your development machine.
 
 Usage:
 
 - Clone the project
-- Run NPM install
+- Run `npm install`
+- Run `webpack`
 - Build your stuff within the `website` folder. PHP7 is available.
 
 ## MySQL

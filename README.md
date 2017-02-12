@@ -34,7 +34,7 @@ Using the extract-text-plugin, styles are put into a seperate css file rather th
 
 ## MySQL
 
-A database is already created.
+A database is created.
 
 Connect using following info:
 

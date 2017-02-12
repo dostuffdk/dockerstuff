@@ -7,16 +7,15 @@
 <body>
 	<?php
 	$hostname = "mysql";
-	$username = "root";
-	$password = "1234";
+	$username = "project";
+	$password = "project";
 	try {
-	    $dbh = new PDO("mysql:host=$hostname;dbname=mysql", $username, $password);
-	    echo "Connected to database"; // check for connection
-	    }
-	catch(PDOException $e)
-	    {
+	    $dbh = new PDO("mysql:host=$hostname;dbname=project", $username, $password);
+	    echo "Connected to database";
+	}
+	catch(PDOException $e) {
 	    echo $e->getMessage();
-	    }
+	}
 	?>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>

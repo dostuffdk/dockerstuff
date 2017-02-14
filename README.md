@@ -7,7 +7,7 @@ Opinionated Docker starting point for development with:
 - MySQL
 - phpMyAdmin
 - webpack 1.x
-- SASS (SCSS)
+- PostCSS with cssnext
 - babel (ES2015).
 
 ## Requirements
@@ -22,6 +22,10 @@ Opinionated Docker starting point for development with:
 - Run `webpack`
 - Ready to go on `http://localhost`. Open `website/index.php` and `assets/app.js` in your editor and have fun.
 
+## PostCSS notice
+
+PostCSS is configured to use cssnext and imports.
+
 ## webpack notice
 
 Using the extract-text-plugin, styles are put into a seperate css file rather than just included in the javascript bundle.
@@ -30,7 +34,7 @@ Using the extract-text-plugin, styles are put into a seperate css file rather th
 
 - `website` is what nginx sees: the document root. Place your "main" PHP or HTML file(s) here along with whatever the browser needs access to.
 - `website/js` and `website/css` are destinations for the webpacked bundles.
-- `assets` is for your javascript and SASS files that webpack should crunch on.
+- `assets` is for your javascript and CSS files that webpack should crunch on.
 
 ## MySQL
 

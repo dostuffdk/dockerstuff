@@ -1,7 +1,18 @@
 :root {
-  --mainColor: #bada55;
+  --backgroundColor: hotpink;
 }
 
-a {
-  color: var(--mainColor);
+body {
+  color: var(--backgroundColor);
+}
+
+.media {
+	display: flex;
+	align-items: flex-start;
+	&__figure {
+		margin-right: 1em;
+	}
+	&__body {
+		flex: 1;
+	}
 }

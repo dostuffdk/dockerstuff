@@ -1,9 +1,11 @@
+@import "partial.css";
+
 :root {
   --backgroundColor: hotpink;
 }
 
 body {
-  color: var(--backgroundColor);
+  background-color: var(--backgroundColor);
 }
 
 .media {

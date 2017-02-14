@@ -14,10 +14,6 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.scss$/,
-				loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader!sass-loader')
-			},
-			{
 				test: /\.js$/,
 				loader: 'babel',
 				exclude: /node_modules/,
@@ -25,6 +21,16 @@ module.exports = {
 					plugins: ['transform-runtime']
 				}
 			},
+			{
+				test: /\.css$/,
+				loader: ExtractTextPlugin.extract('style-loader', 'css-loader?importLoaders=1!postcss-loader')
+			}
 		]
+	},
+	postcss: function() {
+		return [
+			require('postcss-import'),
+			require('postcss-cssnext')
+		];
 	}
 };

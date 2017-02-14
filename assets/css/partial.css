@@ -1,0 +1,7 @@
+:root {
+  --textColor: white;
+}
+
+body {
+	color: var(--textColor);
+}

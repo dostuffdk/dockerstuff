@@ -1,0 +1,20 @@
+@import "partial.css";
+
+:root {
+  --backgroundColor: hotpink;
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+.media {
+	display: flex;
+	align-items: flex-start;
+	&__figure {
+		margin-right: 1em;
+	}
+	&__body {
+		flex: 1;
+	}
+}

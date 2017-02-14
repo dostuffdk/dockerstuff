@@ -29,6 +29,7 @@ module.exports = {
 	},
 	postcss: function() {
 		return [
+			require('postcss-import'),
 			require('postcss-cssnext')
 		];
 	}

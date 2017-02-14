@@ -25,6 +25,15 @@ module.exports = {
 					plugins: ['transform-runtime']
 				}
 			},
+			{
+				test: /\.css$/,
+				loader: ExtractTextPlugin.extract('style-loader', 'css-loader?importLoaders=1!postcss-loader')
+			}
 		]
+	},
+	postcss: function() {
+		return [
+			require('postcss-cssnext')
+		];
 	}
 };

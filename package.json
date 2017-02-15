@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://dostuffdk@bitbucket.org/dostuffdk/dockerstuff.git"
+    "url": "https://github.com/dostuffdk/dockerstuff.git"
   },
   "author": "Anders Mogensen <anders@dostuff.dk>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/dostuffdk/dockerstuff#readme",
+  "homepage": "https://github.com/dostuffdk/dockerstuff",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",

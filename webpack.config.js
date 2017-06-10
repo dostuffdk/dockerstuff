@@ -1,4 +1,5 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var StyleLintPlugin = require("stylelint-webpack-plugin");
 
 module.exports = {
 	entry: [
@@ -9,7 +10,12 @@ module.exports = {
 		filename: 'app.js'
 	},
 	plugins: [
-		new ExtractTextPlugin("./../css/style.css", {allChunks: false}) // we need to step back so we dont put css files in the js dir
+		new ExtractTextPlugin("./../css/style.css", {allChunks: false}), // we need to step back so we dont put css files in the js dir
+		new StyleLintPlugin({
+			configFile: './.stylelintrc',
+			context: './assets/css/',
+			files: '**/*.css'
+		})
 	],
 	module: {
 		preLoaders: [

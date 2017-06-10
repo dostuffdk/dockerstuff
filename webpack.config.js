@@ -13,8 +13,8 @@ module.exports = {
 		new ExtractTextPlugin("./../css/style.css", {allChunks: false}), // we need to step back so we dont put css files in the js dir
 		new StyleLintPlugin({
 			configFile: './.stylelintrc',
-			context: './assets/css/',
-			files: '**/*.css'
+			context: './assets/',
+			files: ['**/*.css', '**/*.vue']
 		})
 	],
 	module: {

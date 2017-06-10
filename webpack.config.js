@@ -12,6 +12,13 @@ module.exports = {
 		new ExtractTextPlugin("./../css/style.css", {allChunks: false}) // we need to step back so we dont put css files in the js dir
 	],
 	module: {
+		preLoaders: [
+			{
+				test: /\.(js|vue)/,
+				loader: 'eslint',
+				exclude: /node_modules/
+			}
+		],
 		loaders: [
 			{
 				test: /\.js$/,
@@ -32,5 +39,9 @@ module.exports = {
 			require('postcss-import'),
 			require('postcss-cssnext')
 		];
+	},
+	eslint: {
+		failOnWarning: false,
+		failOnError: true
 	}
 };

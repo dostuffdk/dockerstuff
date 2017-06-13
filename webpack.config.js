@@ -1,4 +1,5 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var StyleLintPlugin = require("stylelint-webpack-plugin");
 
 module.exports = {
 	entry: [
@@ -9,9 +10,21 @@ module.exports = {
 		filename: 'app.js'
 	},
 	plugins: [
-		new ExtractTextPlugin("./../css/style.css", {allChunks: false}) // we need to step back so we dont put css files in the js dir
+		new ExtractTextPlugin("./../css/style.css", {allChunks: false}), // we need to step back so we dont put css files in the js dir
+		new StyleLintPlugin({
+			configFile: './.stylelintrc',
+			context: './assets/',
+			files: ['**/*.css', '**/*.vue']
+		})
 	],
 	module: {
+		preLoaders: [
+			{
+				test: /\.(js|vue)/,
+				loader: 'eslint',
+				exclude: /node_modules/
+			}
+		],
 		loaders: [
 			{
 				test: /\.js$/,
@@ -32,5 +45,9 @@ module.exports = {
 			require('postcss-import'),
 			require('postcss-cssnext')
 		];
+	},
+	eslint: {
+		failOnWarning: false,
+		failOnError: true
 	}
 };

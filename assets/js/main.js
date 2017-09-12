@@ -3,4 +3,4 @@ const with1000Increment = salaries.map(s => s + 1000);
 console.log(with1000Increment);
 
 const bar = 'baz';
-console.log(`Foo bar: ${baz}`);
+console.log(`Foo bar: ${bar}`);

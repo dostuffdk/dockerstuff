@@ -1,19 +1,16 @@
 @import "partial.css";
-/*
+
 :root {
-	--backgroundColor: blue;
+	--backgroundColor: hotpink;
 }
 
 body {
 	background-color: var(--backgroundColor);
-}*/
-
-body {
-	background-color: hotpink;
 }
 
 .media {
 	display: flex;
+	color: #9d9c;
 	align-items: flex-start;
 	&__figure {
 		margin-right: 1em;

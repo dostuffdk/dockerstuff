@@ -1,11 +1,7 @@
-/*:root {
+:root {
 	--textColor: white;
 }
 
 body {
 	color: var(--textColor);
-}*/
-
-body {
-	color: blue;
 }

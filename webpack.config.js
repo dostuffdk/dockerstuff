@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
 	entry: './assets/app.js',
@@ -37,6 +38,11 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin('./../css/style.css')
+		new ExtractTextPlugin('./../css/style.css'),
+		new StyleLintPlugin({
+			configFile: './.stylelintrc',
+			context: './assets/',
+			files: ['**/*.css']
+		})
 	]
 };

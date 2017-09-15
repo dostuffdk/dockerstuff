@@ -6,9 +6,9 @@ Opinionated Docker starting point for development with:
 - PHP 7
 - MySQL
 - phpMyAdmin
-- webpack 1.x
+- webpack
 - PostCSS with cssnext
-- babel (ES2015).
+- babel
 
 ## Requirements
 

@@ -10,6 +10,7 @@ body {
 
 .media {
 	display: flex;
+	color: #9d9c;
 	align-items: flex-start;
 	&__figure {
 		margin-right: 1em;
